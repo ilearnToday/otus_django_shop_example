@@ -1,0 +1,23 @@
+{% extends 'shop_example/base.html'%}
+
+{% block site_menu %}
+{% for item in menu_items %}
+<button>{{item.menu_item_name}}</button>
+{% endfor %}
+{% endblock site_menu%}
+
+{% block computers %}
+{% for computer in computers %}
+<div class="computer-card">
+    <div class="comp-img">
+    {% load static %}
+    <img src="{% static computer.picture_link %}">
+    </div>
+    <div class="comp-after-img-block">
+        {{computer.name}}
+        <button> See details </button>
+    </div>
+</div>    
+{% endfor %}
+{% endblock computers%}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/shop_example/css/main.css' %}">
+</head>
+<body class="base-body">
+<div class="site-header">
+    <div class="site-header-text">
+        DJANGO SIMPLE SHOP
+    </div>
+    <div class="github-reference-icon">
+        <a href="https://github.com/ilearnToday/otus_first_homework">
+            <div class="git-icon">
+                Git icon
+            </div>
+        </a>
+    </div>
+</div>
+<div class="main-page-menu">
+{% block site_menu %}
+{% endblock site_menu%}
+</div>
+<div class="computers-content">
+    {% block computers%}
+    {% endblock computers%}
+</div>
+</body>
+</html>
