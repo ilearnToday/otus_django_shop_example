@@ -1,0 +1,24 @@
+{% extends 'shop_example/base.html'%}
+
+{% block custom_static%}
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'shop_example/css/comp.css'%}">
+{% endblock custom_static %}
+
+{% block computer_page %}
+<div class="row computer-page-content">
+    <div class="computer-picture col-md-4">
+    {% load static %}
+        <img class="computer-picture " src="{% static computer_to_render.picture_link %}">
+    </div>
+
+    <div class="computer-description col-md-4">
+        <h1>{{computer_to_render.name}}</h1>
+    </div>
+
+    <div class="payment-section col-md-4">
+        <h1>{{computer_to_render.name}}</h1>
+    </div>
+
+</div>
+{% endblock computer_page%}

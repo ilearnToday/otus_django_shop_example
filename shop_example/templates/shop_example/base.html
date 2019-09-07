@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Title</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'shop_example/thirdparty/css/bootstrap.min.css'%}">
-    <link rel="stylesheet" href="{% static 'shop_example/css/main.css'%}">
+    <link rel="stylesheet" href="{% static 'shop_example/thirdparty/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'shop_example/css/header.css' %}">
+    {% block custom_static %}
+    {% endblock custom_static%}
 </head>
 <div class="container">
 <div class="site-header ">
@@ -23,13 +25,13 @@
     </div>
         </div>
 </div>
-<div class="main-page-menu btn-group btn-group-lg">
-{% block site_menu %}
-{% endblock site_menu%}
-</div>
-<div class="row computers-content">
+    {% block site_menu %}
+    {% endblock site_menu%}
+
     {% block computers%}
     {% endblock computers%}
-</div>
+
+    {% block computer_page %}
+    {% endblock computer_page%}
 </div>
 </html>

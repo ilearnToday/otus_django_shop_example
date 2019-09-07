@@ -16,6 +16,7 @@ class Computers(models.Model):
 
     name = models.TextField()
     picture_link = models.TextField()
+    comp_link = models.TextField()
 
 
     def __str__(self):

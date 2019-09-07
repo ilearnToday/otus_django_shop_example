@@ -5,6 +5,6 @@ app_name = 'shop_example'
 
 urlpatterns = [
     path('', views.MainPageView.as_view()),
-    # path('computers/<int:computer>', views.ComputerPageView.as_view())
+    path('computers/<int:id>', views.ComputerPageView.as_view())
 
 ]
