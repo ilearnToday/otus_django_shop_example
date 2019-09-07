@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <title>Title</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static '/shop_example/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'shop_example/thirdparty/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'shop_example/css/main.css'%}">
 </head>
-<body class="base-body">
-<div class="site-header">
-    <div class="site-header-text">
-        DJANGO SIMPLE SHOP
+<div class="container">
+<div class="site-header ">
+    <div class="row site-header">
+    <div class="site-header-text col-md-10 col-sm-10">
+        <h1 class="dasplay-4"> DJANGO SIMPLE SHOP </h1>
     </div>
-    <div class="github-reference-icon">
+    <div class="github-reference-icon col-md-2 col-sm-2">
         <a href="https://github.com/ilearnToday/otus_first_homework">
             <div class="git-icon">
-                Git icon
+                {% load static%}
+                <img src="{% static 'shop_example/img/GitHub_Logo.png' %}" class="git-icon">
             </div>
         </a>
     </div>
+        </div>
 </div>
-<div class="main-page-menu">
+<div class="main-page-menu btn-group btn-group-lg">
 {% block site_menu %}
 {% endblock site_menu%}
 </div>
-<div class="computers-content">
+<div class="row computers-content">
     {% block computers%}
     {% endblock computers%}
 </div>
-</body>
+</div>
 </html>

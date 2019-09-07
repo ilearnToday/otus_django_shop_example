@@ -1,3 +1,80 @@
-.base-body{
+.git-icon{
+    height: 25px;
+}
+.site-header{
+    min-height: 40px;
+}
+.main-page-menu{
+    height: 45px;
+    width: 100%;
+}
+.menu-item {
+    min-width: 16.6%;
+}
+.menu-item:hover {
+    width: 16.8%;
+    box-shadow: 2px 2px 5px #777;
+}
+.comp-img {
+    width: 100%;
+    height: 220px;
+}
+.computers-content{
+    margin-top: 20px;
+    background-color: #f8f9fa;
+}
+.computer-card{
+    width: 220px;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 20px;
+
 
 }
+.comp-after-img-block{
+    padding: 0 15px 0 15px;
+    background-color: white;
+}
+.comp-name {
+    text-align: center;
+}
+
+.border-top-img{
+    border-top: 1px solid rgba(0,0,0,.125);
+    border-top-color: rgba(0, 0, 0, 0.125);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+
+}
+.border-right-left{
+    border-right-color: rgba(0, 0, 0, 0.125);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-left-color: rgba(0, 0, 0, 0.125);
+    border-left-style: solid;
+    border-left-width: 1px;
+
+}
+
+.border-bottom{
+    border-bottom-color: rgba(0, 0, 0, 0.125);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.go-to-details-button-block{
+    height: 80px;
+}
+.details-btn {
+    margin: 5px;
+
+}
+
