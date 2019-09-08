@@ -7,3 +7,26 @@
 .payment-section{
     width:100%;
 }
+.computer-page-content{
+    margin-top: 50px;
+}
+
+.payment-button-section{
+    height:50%;
+}
+.back-to-main-page{
+    height:50%;
+}
+.buy-button{
+    padding: 5px 80px 5px 80px;
+}
+
+.price-header{
+    text-align: center;
+    margin: 30px;
+}
+
+.main-page-btn{
+    margin-left: 150px;
+    margin-bottom: 50px;
+}

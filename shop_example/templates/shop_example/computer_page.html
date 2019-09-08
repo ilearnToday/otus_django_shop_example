@@ -13,11 +13,34 @@
     </div>
 
     <div class="computer-description col-md-4">
-        <h1>{{computer_to_render.name}}</h1>
+        <div class="computer-info-column-header">
+        <h3>{{computer_to_render.name}}</h3>
+        </div>
+        <div class="computer-info-column-body">
+            <ul>
+                <li>{{computer_to_render.display_type}}</li>
+                <li>{{computer_to_render.processor_type}}</li>
+                <li>{{computer_to_render.ram_type}}</li>
+                <li>{{computer_to_render.ssd_volume}}</li>
+            </ul>
+        </div>
     </div>
 
     <div class="payment-section col-md-4">
-        <h1>{{computer_to_render.name}}</h1>
+        <div class="payment-button-section">
+            <h3 class="price-header">{{computer_to_render.comp_price}} {{computer_to_render.price_currency}}</h3>
+            <form action="#" class="row">
+                <div class="col text-center">
+                    <button class="buy-button btn btn-success">BUY</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="back-to-main-page row">
+            <form action="/shop/" class="col align-self-end">
+                <button class="main-page-btn btn btn-info ">Go to main page</button>
+            </form>
+        </div>
     </div>
 
 </div>
