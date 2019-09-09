@@ -1,6 +1,7 @@
 # django shop example
 Simple django application with main page and product page. Otus homework.
 ## Installation
+Clone project:
 ```bash
 git clone https://github.com/ilearnToday/otus_django_shop_example.git
 ```
