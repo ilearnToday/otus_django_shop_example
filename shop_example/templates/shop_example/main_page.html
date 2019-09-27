@@ -1,35 +1,35 @@
 {% extends 'shop_example/base.html'%}
 
 {% block custom_static%}
-    {% load static%}
-    <link rel="stylesheet" href="{% static 'shop_example/css/main.css'%}">
+{% load static%}
+<link rel="stylesheet" href="{% static 'shop_example/css/main.css'%}">
 {% endblock custom_static %}
 
 
 {% block site_menu %}
 <div class="main-page-menu btn-group btn-group-lg">
-{% for item in menu_items %}
-<button class="menu-item">{{item.menu_item_name}}</button>
-{% endfor %}
+    {% for item in menu_items %}
+    <button class="menu-item">{{item.menu_item_name}}</button>
+    {% endfor %}
 </div>
 {% endblock site_menu%}
 
+
 {% block computers %}
 <div class="row computers-content">
-{% for computer in computers %}
-<div class="computer-card col-md-4 comp-card-shadow">
-    <div class="comp-img ">
-    {% load static %}
-    <img src="{% static computer.picture_link %}" class="card-img-top comp-img border-top-img border-right-left">
+    {% for computer in computers %}
+    <div class="computer-card col-md-4 comp-card-shadow">
+        <div class="comp-img ">
+            <img src="{% static computer.picture_link %}" class="card-img-top comp-img border-top-img border-right-left">
+        </div>
+        <div class="comp-after-img-block border-right-left border-bottom">
+            <h5 class="comp-name">{{computer.name}}</h5>
+            <form class="row go-to-details-button-block" action="{{computer.comp_link}}">
+                <button class="details-btn btn btn-primary col align-self-end"> See details </button>
+            </form>
+        </div>
     </div>
-    <div class="comp-after-img-block border-right-left border-bottom">
-        <h5 class="comp-name">{{computer.name}}</h5>
-        <form class="row go-to-details-button-block" action="{{computer.comp_link}}">
-        <button class="details-btn btn btn-primary col align-self-end"> See details </button>
-        </form>
-    </div>
-</div>    
-{% endfor %}
+    {% endfor %}
 </div>
 {% endblock computers%}
 

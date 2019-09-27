@@ -1,9 +1,10 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    {% load static %}
     <link rel="stylesheet" href="{% static 'shop_example/thirdparty/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'shop_example/css/header.css' %}">
     {% block custom_static %}
@@ -16,9 +17,8 @@
         <h1 class="dasplay-4"> DJANGO SIMPLE SHOP </h1>
     </div>
     <div class="github-reference-icon col-md-2 col-sm-2">
-        <a href="https://github.com/ilearnToday/">
+        <a href="https://github.com/ilearnToday/otus_django_shop_example">
             <div class="git-icon">
-                {% load static%}
                 <img src="{% static 'shop_example/img/GitHub_Logo.png' %}" class="git-icon">
             </div>
         </a>
