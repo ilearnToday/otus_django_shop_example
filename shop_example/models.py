@@ -6,7 +6,7 @@ class SiteMenu(models.Model):
     menu_item_name = models.TextField()
 
     def __str__(self):
-        return '{}'.format(self.menu_item_name)
+        return self.menu_item_name
 
 
 class Computers(models.Model):
