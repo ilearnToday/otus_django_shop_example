@@ -1,4 +1,7 @@
 import os
+from django_shop_example.secret import SECRET_KEY
+
+from django_shop_example.local_env import DEBUG_ON
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -8,10 +11,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '+k8m8&jmyy%9=ls%hok(!a=e749n^!4e$n26asclceh!*t0q%%'
+# SECRET_KEY = '+k8m8&jmyy%9=ls%hok(!a=e749n^!4e$n26asclceh!*t0q%%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = DEBUG_ON
 
 ALLOWED_HOSTS = ['*']
 
