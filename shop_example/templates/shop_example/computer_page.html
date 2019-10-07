@@ -1,7 +1,7 @@
 {% extends 'shop_example/base.html'%}
 
 {% block custom_static%}
-    {% load static%}
+{% load static%}
     <link rel="stylesheet" href="{% static 'shop_example/css/comp.css'%}">
 {% endblock custom_static %}
 
@@ -37,7 +37,7 @@
         </div>
 
         <div class="back-to-main-page row">
-            <form action="/shop/" class="col align-self-end">
+            <form action="{% url 'shop_example:main-page' %}" class="col align-self-end">
                 <button class="main-page-btn btn btn-info ">Go to main page</button>
             </form>
         </div>

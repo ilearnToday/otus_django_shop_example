@@ -17,7 +17,7 @@ class Computers(models.Model):
 
     name = models.TextField()
     picture_link = models.TextField(max_length=150)
-    comp_link = models.TextField(max_length=100)
+    comp_link = models.ImageField()
 
     comp_price = models.DecimalField(decimal_places=1, max_digits=15)
     price_currency = models.CharField(max_length=1)
