@@ -1,7 +1,7 @@
 # django shop example
 Simple django application with main page and product page. Otus homework.
 ## Installation
-###Clone project:
+### Clone project:
 ```bash
 git clone https://github.com/ilearnToday/otus_django_shop_example.git
 ```
@@ -12,7 +12,7 @@ You can find instructions [here](https://docs.python.org/3.6/library/venv.html)
 ```bash
 pip install -r requirements.txt
 ```
-###Set up secret key for project:
+### Set up secret key for project:
 * Generate key 
 ```bash
 python -c 'import random;
