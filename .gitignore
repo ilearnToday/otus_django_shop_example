@@ -1,9 +1,5 @@
-# Byte-compiled / optimized / DLL files
 __pycache__/
-
-# Evironment
 venv/
-
-# Secret keys
-
 secret.*
+*db*
+*todo*
