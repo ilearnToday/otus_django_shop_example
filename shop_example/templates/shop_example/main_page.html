@@ -2,14 +2,14 @@
 
 {% block custom_static%}
 {% load static%}
-<link rel="stylesheet" href="{% static 'shop_example/css/main.css'%}">
+    <link rel="stylesheet" href="{% static 'shop_example/css/main.css'%}">
 {% endblock custom_static %}
 
 
 {% block site_menu %}
 <div class="main-page-menu btn-group btn-group-lg">
     {% for item in menu_items %}
-    <button class="menu-item">{{item.menu_item_name}}</button>
+        <button class="menu-item">{{item.menu_item_name}}</button>
     {% endfor %}
 </div>
 {% endblock site_menu%}
