@@ -9,7 +9,7 @@
 <div class="row computer-page-content">
     <div class="computer-picture col-md-4">
     {% load static %}
-        <img class="computer-picture " src="{% static computer_to_render.picture_link %}">
+        <img class="computer-picture " src="{{ computer_to_render.picture_link.url }}">
     </div>
 
     <div class="computer-description col-md-4">

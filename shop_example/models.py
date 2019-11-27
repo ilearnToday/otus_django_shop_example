@@ -16,8 +16,8 @@ class Computers(models.Model):
         verbose_name_plural = 'Computers'
 
     name = models.TextField()
-    picture_link = models.TextField(max_length=150)
-    comp_link = models.ImageField()
+    picture_link = models.ImageField(default='default.jpg', upload_to='comp_images')
+    comp_link = models.TextField(max_length=256)
 
     comp_price = models.DecimalField(decimal_places=1, max_digits=15)
     price_currency = models.CharField(max_length=1)

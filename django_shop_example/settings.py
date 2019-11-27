@@ -91,3 +91,9 @@ class Local(Base):
     DEBUG = True
 
     SECRET_KEY = SECRET_KEY
+
+    MEDIA_URL = '/media/'
+
+    @property
+    def MEDIA_ROOT(self):
+        return os.path.join(self.BASE_DIR, 'images')

@@ -20,7 +20,7 @@
     {% for computer in computers %}
     <div class="computer-card col-md-4 comp-card-shadow">
         <div class="comp-img ">
-            <img src="{% static computer.picture_link %}" class="card-img-top comp-img border-top-img border-right-left">
+            <img src="{{ computer.picture_link.url }}" class="card-img-top comp-img border-top-img border-right-left">
         </div>
         <div class="comp-after-img-block border-right-left border-bottom">
             <h5 class="comp-name">{{computer.name}}</h5>
