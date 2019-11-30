@@ -31,21 +31,23 @@ class Base(Configuration):
 
     ROOT_URLCONF = 'django_shop_example.urls'
 
-    TEMPLATES = [
-        {
-            'BACKEND': 'django.template.backends.django.DjangoTemplates',
-            'DIRS': [],
-            'APP_DIRS': True,
-            'OPTIONS': {
-                'context_processors': [
-                    'django.template.context_processors.debug',
-                    'django.template.context_processors.request',
-                    'django.contrib.auth.context_processors.auth',
-                    'django.contrib.messages.context_processors.messages',
-                ],
+    @property
+    def TEMPLATES(self):
+        return [
+            {
+                'BACKEND': 'django.template.backends.django.DjangoTemplates',
+                'DIRS': [os.path.join(self.BASE_DIR, 'templates')],
+                'APP_DIRS': True,
+                'OPTIONS': {
+                    'context_processors': [
+                        'django.template.context_processors.debug',
+                        'django.template.context_processors.request',
+                        'django.contrib.auth.context_processors.auth',
+                        'django.contrib.messages.context_processors.messages',
+                    ],
+                },
             },
-        },
-    ]
+        ]
 
     WSGI_APPLICATION = 'django_shop_example.wsgi.application'
 
@@ -97,3 +99,13 @@ class Local(Base):
     @property
     def MEDIA_ROOT(self):
         return os.path.join(self.BASE_DIR, 'images')
+
+
+class Production(Base):
+
+    SECRET_KEY = SECRET_KEY
+    ALLOWED_HOSTS = ['localhost']
+
+    DEBUG = False
+
+
